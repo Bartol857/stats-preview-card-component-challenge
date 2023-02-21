@@ -1,0 +1,41 @@
+@media (min-width: 992px) {
+	.box {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+        width: 800px;
+
+		&__img {
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
+
+		&__img-bg {
+			height: 100%;
+		}
+
+		&__text {
+			grid-column: 1/2;
+			grid-row: 1/2;
+			text-align: left;
+		}
+
+		&__stats {
+
+			width: 80%;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+    .box{
+        width: 1000px;
+
+        &__text {
+            padding: 60px;
+        }
+
+        &__header {
+            font-size: 36px;
+        }
+    }
+}
